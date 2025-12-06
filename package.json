@@ -1,0 +1,24 @@
+{
+  "name": "courses-catalog",
+  "version": "1.0.0",
+  "description": "Course catalog with live search and filtering - Vanilla JS + SCSS + BEM",
+  "scripts": {
+    "sass": "sass scss/main.scss css/main.css --style=expanded",
+    "sass:watch": "sass scss/main.scss css/main.css --watch --style=expanded",
+    "sass:build": "sass scss/main.scss css/main.css --style=compressed --no-source-map",
+    "dev": "npm run sass:watch",
+    "build": "npm run sass:build"
+  },
+  "devDependencies": {
+    "sass": "^1.69.5"
+  },
+  "keywords": [
+    "courses",
+    "catalog",
+    "bem",
+    "vanilla-js",
+    "scss"
+  ],
+  "author": "",
+  "license": "MIT"
+}

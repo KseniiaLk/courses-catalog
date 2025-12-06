@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Online Courses</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="decorative--dots-top"></div>
+
+  <div class="container">
+    <header class="header">
+      <p class="header__subtitle">ENJOY YOUR STUDYING!</p>
+      <h1 class="header__title">Our online courses</h1>
+    </header>
+
+    <section class="controls">
+      <div class="filters">
+        <button class="filters__btn filters__btn--active" data-category="all">All<sup>12</sup></button>
+        <button class="filters__btn" data-category="marketing">Marketing<sup>3</sup></button>
+        <button class="filters__btn" data-category="management">Management<sup>3</sup></button>
+        <button class="filters__btn" data-category="hr">HR & Recruiting<sup>2</sup></button>
+        <button class="filters__btn" data-category="design">Design<sup>2</sup></button>
+        <button class="filters__btn" data-category="development">Development<sup>2</sup></button>
+      </div>
+
+      <div class="search">
+        <input type="text" class="search__input" id="searchInput" placeholder="Search course..." autocomplete="off">
+        <svg class="search__icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <path d="M17.5 17.5L13.875 13.875M15.8333 9.16667C15.8333 12.8486 12.8486 15.8333 9.16667 15.8333C5.48477 15.8333 2.5 12.8486 2.5 9.16667C2.5 5.48477 5.48477 2.5 9.16667 2.5C12.8486 2.5 15.8333 5.48477 15.8333 9.16667Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </section>
+
+    <main class="courses" id="coursesGrid"></main>
+
+    <div class="no-results" id="noResults">
+      <p class="no-results__text">No courses found</p>
+    </div>
+
+    <div class="load-more">
+      <button class="load-more__btn" id="loadMoreBtn">Load more</button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
